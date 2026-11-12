@@ -1,7 +1,4 @@
 
-/* =================================
-   1. GLOBAL STYLES
-================================= */
 
 * {
     margin: 0;
@@ -52,10 +49,6 @@ input {
 }
 
 
-/* =================================
-   2. ANNOUNCEMENT BAR
-================================= */
-
 .announcement {
     background-color: #f8dce6;
     color: #714b5b;
@@ -65,10 +58,6 @@ input {
     letter-spacing: 1px;
 }
 
-
-/* =================================
-   3. NAVIGATION BAR
-================================= */
 
 .header {
     position: sticky;
@@ -284,10 +273,6 @@ input {
 }
 
 
-/* =================================
-   5. TRUST SECTION
-================================= */
-
 .trust-section {
     padding: 28px 8%;
     display: grid;
@@ -315,9 +300,6 @@ input {
 }
 
 
-/* =================================
-   6. PRODUCTS SECTION
-================================= */
 
 .products {
     background: white;
@@ -544,9 +526,6 @@ input {
 }
 
 
-/* =================================
-   9. TESTIMONIAL SECTION
-================================= */
 
 .testimonial {
     background: linear-gradient(
@@ -590,9 +569,6 @@ input {
 }
 
 
-/* =================================
-   10. NEWSLETTER SECTION
-================================= */
 
 .newsletter {
     background: white;
@@ -660,9 +636,6 @@ input {
 }
 
 
-/* =================================
-   11. FOOTER
-================================= */
 
 .footer {
     background: #49343c;
@@ -728,11 +701,6 @@ input {
     font-size: 11px;
 }
 
-
-/* =================================
-   12. RESPONSIVE DESIGN - TABLET
-================================= */
-
 @media (max-width: 1000px) {
 
     .navbar {
@@ -771,10 +739,6 @@ input {
 
 }
 
-
-/* =================================
-   13. RESPONSIVE DESIGN - MOBILE
-================================= */
 
 @media (max-width: 700px) {
 
@@ -935,9 +899,6 @@ input {
 }
 
 
-/* =================================
-   14. SMALL MOBILE SCREENS
-================================= */
 
 @media (max-width: 380px) {
 
