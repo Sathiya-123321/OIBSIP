@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simple, interactive tool to convert temperatures between Celsius, Fahrenheit, and Kelvin."
+    />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <span class="app__icon" aria-hidden="true">🌡️</span>
+        <h1>Temperature Converter</h1>
+        <p>Enter a value and see it converted into all three temperature scales.</p>
+      </header>
+
+      <section class="card" aria-labelledby="controls-title">
+        <h2 id="controls-title" class="sr-only">Converter controls</h2>
+
+        <div class="field">
+          <label for="temperature">Temperature value</label>
+          <input
+            id="temperature"
+            name="temperature"
+            type="text"
+            inputmode="decimal"
+            autocomplete="off"
+            placeholder="e.g. 25 or -12.5"
+            aria-describedby="temperature-error"
+          />
+          <p id="temperature-error" class="error" role="alert" hidden></p>
+        </div>
+
+        <fieldset class="field">
+          <legend>Convert from</legend>
+          <div class="segmented">
+            <label class="segment">
+              <input type="radio" name="from-unit" value="C" checked />
+              <span>Celsius <small>(°C)</small></span>
+            </label>
+            <label class="segment">
+              <input type="radio" name="from-unit" value="F" />
+              <span>Fahrenheit <small>(°F)</small></span>
+            </label>
+            <label class="segment">
+              <input type="radio" name="from-unit" value="K" />
+              <span>Kelvin <small>(K)</small></span>
+            </label>
+          </div>
+        </fieldset>
+
+        <button id="convert" class="convert-btn" type="button">Convert temperature</button>
+
+        <p id="message" class="message" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="results" aria-labelledby="results-title">
+        <div class="results__heading">
+          <h2 id="results-title">Converted values</h2>
+          <span class="results__hint">All units shown at once</span>
+        </div>
+
+        <div class="results__grid">
+          <article class="result" data-unit="C">
+            <div class="result__top">
+              <span class="result__name">Celsius</span>
+              <span class="result__badge">Converted</span>
+            </div>
+            <output id="out-c" class="result__value" aria-label="Celsius result">—</output>
+            <span class="result__unit">°C</span>
+          </article>
+
+          <article class="result" data-unit="F">
+            <div class="result__top">
+              <span class="result__name">Fahrenheit</span>
+              <span class="result__badge">Converted</span>
+            </div>
+            <output id="out-f" class="result__value" aria-label="Fahrenheit result">—</output>
+            <span class="result__unit">°F</span>
+          </article>
+
+          <article class="result" data-unit="K">
+            <div class="result__top">
+              <span class="result__name">Kelvin</span>
+              <span class="result__badge">Converted</span>
+            </div>
+            <output id="out-k" class="result__value" aria-label="Kelvin result">—</output>
+            <span class="result__unit">K</span>
+          </article>
+        </div>
+      </section>
+
+      <footer class="app__footer">
+        <p>Absolute zero = −273.15 °C = −459.67 °F = 0 K</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
